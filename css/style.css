@@ -1173,7 +1173,7 @@
     /* profeta */
     .section-profeta{
         height: 100vh;
-        background-image: url(https://drivetfdf.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/01/25210506/wmb-bg-2-min-2.jpg);
+        background-image: url("https://tabernaculodafebrasilia.org.br/wp-content/uploads/2021/01/wmb-bg-2-min-2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
