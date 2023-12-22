@@ -66,7 +66,7 @@ const destaque = document.querySelector("#destaque");
 const recomendados = document.querySelector("#recomendados");
 const short = document.querySelector("#short");
 
-const urll = "../../json/main.json";
+const urll = "../../src/json/main.json";
 
 fetch(urll)
   .then((res) => res.text())
