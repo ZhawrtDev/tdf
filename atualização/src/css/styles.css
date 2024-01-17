@@ -190,6 +190,11 @@ header .navigation li a:hover:after {
     margin-right: 10px;
 }
 
+i.bx.bx-bell {
+    position: relative;
+    top: 3px;
+}
+
 /* MAIN */
 .div-youtube {
     position: relative;
@@ -555,7 +560,10 @@ header .navigation li a:hover:after {
 font-size: 30px;
 }
 
-
+/* CONTATO */
+#contato {
+    background: #fff;
+}
 
 /* SCROLL */
 #scroll-to-top {

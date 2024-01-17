@@ -6,10 +6,10 @@
         <title>Tabernáculo Da Fé</title>
         <link rel="stylesheet" type="text/css" href="src/css/styles.css">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css?_cacheOverride=1703547652288">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
         <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     </head>
@@ -34,9 +34,9 @@
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
             <div class="icon">
-                <a href="https://www.youtube.com/channel/UCJ1RTO5MjmLlgI5rlEEqCiA"><ion-icon name="logo-youtube"></ion-icon></a>
-                <a href="https://www.instagram.com/tabernaculodafeperiperi/?igshid=MzRlODBiNWFlZA%3D%3D"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a><ion-icon name="notifications"></ion-icon></a>
+                <a href="https://www.youtube.com/channel/UCJ1RTO5MjmLlgI5rlEEqCiA"><i class="uil uil-youtube"></i></a>
+                <a href="https://www.instagram.com/tabernaculodafeperiperi/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="uil uil-instagram"></i></a>
+                <a><i class="bx bx-bell"></i></a>
             </div>
         </div>
     </header>
@@ -208,6 +208,24 @@
         </div>
     </section>
 
+    <!-- CONTATO -->
+    <section id="contato">
+        <div class="contato">
+            <div class="boxs-contato"></div>
+            <div class="contato-form">
+                <form action="https://formsubmit.co/ajax/tdfperiperi@gmail.com" method="POST" data-form>    
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite Seu Nome" required/>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite Seu Email" required/>
+                    <label for="mensagem" >Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" required placeholder=" Notifique a sua audiência Faça seu pedido de oração."></textarea>
+                    <button id="form-btn" type="submit" data-button>Enviar <i class="uil uil-message"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- SCROLL -->
     <a href="#" id="scroll-to-top" class="hidden" onclick="scrollToTop(); return false;">
         <i class="bx bx-chevron-up"></i>
@@ -224,7 +242,7 @@
                 <input type="email" name="email" id="email" placeholder="Digite Seu Email" required/>
                 <label for="mensagem" >Mensagem</label>
                 <textarea name="mensagem" id="mensagem" required placeholder=" Notifique a sua audiência Faça seu pedido de oração."></textarea>
-                <button id="form-btn" type="submit" data-button>Enviar <i class='bx bx-send'></i></button>
+                <button id="form-btn" type="submit" data-button>Enviar <i class="uil uil-message"></i></button>
             </form>
         </div>
     </div>
