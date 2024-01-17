@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Reenie+Beanie&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -221,6 +221,7 @@ header .navigation li a:hover:after {
     left: 50%;
     height: 59px;
     transform: translate(-50%);
+    cursor: pointer;
 }
 .enviar:hover{
     animation: enviar 1s 1;
@@ -272,7 +273,7 @@ header .navigation li a:hover:after {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.box {
+.main-box .box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,3 +323,269 @@ header .navigation li a:hover:after {
 .main-box .box .text p {
     font-weight: 500;
 }
+
+/* PASTOR */
+.pastor-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.gradient {
+    position: relative;
+    top: -9px;
+    left: -170px;
+    width: 2px;
+    height: 563px;
+    background-image: linear-gradient(to bottom, rgb(106,6,236), rgb(220, 0, 240));
+}
+
+.pastor-main .boxs-main-pastor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: -150px;
+    width: 500px;
+    height: 600px;
+}
+
+.pastor-main .boxs-main-pastor .box-pastor  {
+    text-align: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.288);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.pastor-main .boxs-main-pastor .box-pastor:hover {
+    transform: scale(1.02);
+  }
+
+.pastor-main .boxs-main-pastor .box-pastor .text-pastor {
+    margin-left: 20px;
+    color: #333;
+}
+
+.pastor-main .boxs-main-pastor .box-pastor .text-pastor h1 {
+    color: #5E17EB;
+}
+
+.pastor-main .boxs-main-pastor .box-pastor .text-pastor p {
+    line-height: 21px;
+    font-weight: 500;
+    margin: 7px 0;
+}
+
+.pastor-main .boxs-main-pastor .box-pastor .text-pastor h3 {
+    color: #5E17EB;
+    display: flex;
+    align-items: center; 
+}
+
+.pastor-main .boxs-main-pastor .box-pastor .text-pastor h3 ion-icon {
+    margin-left: 10px;
+}
+
+#icone-pastor {
+    color: #8e7a6293;
+    font-size: 23px;
+}
+
+.pastor {
+    position: relative;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 352px;
+    height: 542px;
+}
+
+.pastor .img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.26);
+}
+
+.pastor .img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.pastor .text {
+    color: #333;
+    margin-top: 20px;
+}
+
+.pastor .text h3 {
+    font-family: "Reenie Beanie", Sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    color: #ebc059;
+}
+
+.pastor .text h1 {
+    position: relative;
+    top: -14px;
+    font-size: 2.3em;
+}
+
+.pastor .text h2 {
+    font-size: 17px;
+    position: relative;
+    top: -20px;
+}
+
+.pastor .text p{
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    top: -16px;
+}
+
+.pastor .text a {
+    position: relative;
+    top: 7px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    color: #333;
+    background: #fff;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.26);
+    transition: .5s ease;
+}
+
+.pastor .text a:hover {
+    background: #61CE70;
+    color: #f0f0f0;
+}
+
+/*  POP UP */
+/* MAIN - FORM */
+.popup-main {
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #33333370;
+    z-index: 99;
+}
+
+.popup-main.active {
+    display: flex;
+}
+
+.popup-main .popup-box {
+    background: #fff;
+    border: 1px solid #ffffff52;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 388px;
+    height: 479px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px rgba(0,0,0, 0.100);
+}
+
+.popup-main .popup-box form h1 {
+    position: relative;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.popup-main .popup-box form h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background: #7d715f;
+}
+
+.popup-main .popup-box form label {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.popup-main .popup-box form  
+#form-btn,
+#email,
+#nome,
+#mensagem
+{
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+    background: transparent;
+}
+
+.popup-main .popup-box form  
+#email::placeholder,
+#nome::placeholder,
+#mensagem::placeholder
+{
+    color: #333333be;
+}
+
+.popup-main .popup-box form  
+#email,
+#nome{
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus{
+    outline: none;
+}
+
+
+.popup-main .popup-box form #mensagem{
+    min-height: 7.5rem;
+    resize: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.popup-main .popup-box form #form-btn {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #7d715f;
+    cursor: pointer;
+}
+
+.popup-main .popup-box form #form-btn i{
+    margin-left: 5px;
+}
+/* /POP UP */
