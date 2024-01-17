@@ -80,3 +80,26 @@ const formSubmit = new FormSubmit({
     error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
 formSubmit.init();
+
+// SCROLL
+document.addEventListener("DOMContentLoaded", function() {
+    var scrollToTopButton = document.getElementById('scroll-to-top');
+
+    if (!scrollToTopButton) {
+        console.error("Element with ID 'scroll-to-top' not found.");
+        return;
+    }
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopButton.classList.remove('hidden');
+        } else {
+            scrollToTopButton.classList.add('hidden');
+        }
+    };
+});
+
+function scrollToTop() {
+    document.body.scrollTop = 0; // Para navegadores mais antigos
+    document.documentElement.scrollTop = 0; // Para navegadores modernos
+}

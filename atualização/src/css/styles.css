@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@500;700&family=Reenie+Beanie&family=Yeseva+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -335,7 +335,7 @@ header .navigation li a:hover:after {
 .gradient {
     position: relative;
     top: -9px;
-    left: -170px;
+    left: -22px;
     width: 2px;
     height: 563px;
     background-image: linear-gradient(to bottom, rgb(106,6,236), rgb(220, 0, 240));
@@ -343,11 +343,11 @@ header .navigation li a:hover:after {
 
 .pastor-main .boxs-main-pastor {
     position: relative;
+    left: -10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    left: -150px;
     width: 500px;
     height: 600px;
 }
@@ -405,7 +405,8 @@ header .navigation li a:hover:after {
 
 .pastor {
     position: relative;
-    top: -10px;
+    top: -15px;
+    left: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -415,8 +416,8 @@ header .navigation li a:hover:after {
 }
 
 .pastor .img {
-    width: 350px;
-    height: 350px;
+    width: 340px;
+    height: 340px;
     border-radius: 10px;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.26);
 }
@@ -427,39 +428,39 @@ header .navigation li a:hover:after {
 }
 
 .pastor .text {
-    color: #333;
+    color: #fff;
     margin-top: 20px;
 }
 
 .pastor .text h3 {
-    font-family: "Reenie Beanie", Sans-serif;
-    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 19px;
     font-size: 1.6em;
-    color: #ebc059;
+    color: #fff;
 }
 
 .pastor .text h1 {
     position: relative;
-    top: -14px;
+    top: -26px;
     font-size: 2.3em;
 }
 
 .pastor .text h2 {
     font-size: 17px;
     position: relative;
-    top: -20px;
+    top: -30px;
 }
 
 .pastor .text p{
     font-weight: 500;
     font-size: 14px;
     position: relative;
-    top: -16px;
+    top: -25px;
 }
 
 .pastor .text a {
     position: relative;
-    top: 7px;
+    top: -4px;
     padding: 12px 15px;
     border-radius: 5px;
     color: #333;
@@ -468,13 +469,124 @@ header .navigation li a:hover:after {
     transition: .5s ease;
 }
 
-.pastor .text a:hover {
-    background: #61CE70;
-    color: #f0f0f0;
+/* PROFETA */
+#profeta {
+    width: 100%;
+    position: relative;
+    top: 40px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://tabernaculodafebrasilia.org.br/wp-content/uploads/2021/01/wmb-bg-2-min-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/*  POP UP */
-/* MAIN - FORM */
+#profeta .text {
+    color: #fff;
+    position: relative;
+    left: -200px;
+}
+
+#profeta .text h2 {
+    color: #61CE70;
+    font-family: 'Dancing Script', cursive;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+#profeta .text h1 {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 3,2px;
+}
+
+#profeta .text  p {font-size: 20px;margin: 10px 0;}
+
+#profeta .text a {
+    font-weight: 500;
+    fill: #0A0A0A;
+    color: #0A0A0A;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    position: relative;
+    top: 36px;
+    transition: .5s;
+}
+
+#profeta .text a:hover {
+    background: #61CE70;
+    color: #fff;
+}
+
+/* TESTEMUNHOS */
+#testemunhos {
+    background: #fff;
+    color: #333;
+}
+
+.testemunhos-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testemunhos-main .testemunho-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-direction: row;
+}
+
+.testemunhos-main iframe {
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.349);
+}
+
+.testemunhos-main .testemunho-box .text h1 {
+    
+font-size: 30px;
+}
+
+
+
+/* SCROLL */
+#scroll-to-top {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba( 0,0,0,0.4 );
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#scroll-to-top i {
+    color: #ffffffc4;
+}
+
+#scroll-to-top:hover {
+    background-color: rgba( 0,0,0,0.6 );
+}
+
+#scroll-to-top.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* POP UP - MAIN - FORM */
 .popup-main {
     position: fixed;
     top: 0;
@@ -588,4 +700,3 @@ textarea:focus{
 .popup-main .popup-box form #form-btn i{
     margin-left: 5px;
 }
-/* /POP UP */
