@@ -211,16 +211,43 @@
     <!-- CONTATO -->
     <section id="contato">
         <div class="contato">
-            <div class="boxs-contato"></div>
+            <div class="boxs-contato">
+
+                <div class="box-contato">
+                    <i class="uil uil-phone"></i>
+                    <div class="text">
+                        <h1>Telefone</h1>
+                        <p>(38) 99971-6064</p>
+                    </div>
+                </div>
+
+                <div class="box-contato">
+                    <i class="uil uil-envelope-alt"></i>
+                    <div class="text">
+                        <h1>Email</h1>
+                        <p>tdfperiperi@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="box-contato">
+                    <i class="uil uil-location-point"></i>
+                    <div class="text">
+                        <h1>Local</h1>
+                        <p>Miravânia - Tabernáculo Da Fé Peri-Peri</p>
+                    </div>
+                </div>
+
+            </div>
+    
             <div class="contato-form">
-                <form action="https://formsubmit.co/ajax/tdfperiperi@gmail.com" method="POST" data-form>    
+                <form class="contato-form" action="https://formsubmit.co/ajax/tdfperiperi@gmail.com" method="POST" data-form>    
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite Seu Nome" required/>
+                    <input type="text" name="nome" id="nome" required/>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Digite Seu Email" required/>
-                    <label for="mensagem" >Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" required placeholder=" Notifique a sua audiência Faça seu pedido de oração."></textarea>
-                    <button id="form-btn" type="submit" data-button>Enviar <i class="uil uil-message"></i></button>
+                    <input type="email" name="email" id="email" required/>
+                    <label id="label-msg" for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" required></textarea>
+                    <button id="form-btn" type="submit" data-button>Enviar Mensagem<i class="uil uil-message"></i></button>
                 </form>
             </div>
         </div>

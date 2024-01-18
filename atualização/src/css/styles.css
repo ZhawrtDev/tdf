@@ -555,14 +555,129 @@ i.bx.bx-bell {
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.349);
 }
 
-.testemunhos-main .testemunho-box .text h1 {
-    
-font-size: 30px;
+.testemunhos-main .testemunho-box .text h1 { 
+    font-size: 30px;
 }
 
 /* CONTATO */
 #contato {
-    background: #fff;
+    background: #FBFBFE;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #585665;
+}
+
+.contato-form label {
+    position: relative;
+    left: -214px;
+    top: 34px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.contato-form #label-msg {
+    position: relative;
+    left: -197px;
+}
+
+
+
+.contato-form input,
+.contato-form textarea {
+    background: #dfdfe9;
+    border: none;
+    width: 500px;
+    padding: 10px;
+}
+
+.contato-form input {
+    height: 70px;
+    border-radius: 7px;
+}
+
+.contato-form textarea {
+    resize: none;
+    height: 200px;
+    border-radius: 7px;
+}
+
+.contato-form #form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    border: none;
+    background: #7d715f;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 500;
+    margin: 20px 0;
+    cursor: pointer;
+    position: relative;
+    left: -163px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.188);
+}
+
+.contato-form #form-btn i {
+    margin-left: 3px;
+    font-size: 16px;
+}
+
+.contato .contato-form .success {
+    position: relative;
+    top: -88px;
+    font-size: 17px;
+    left: 155px;
+    font-weight: 500;
+    color: #666;
+}
+
+.boxs-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.box-contato {
+    position: relative;
+    width: 274px;
+    height: 93px;
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+    margin-bottom: 40px;
+}
+
+.box-contato i {
+    color: #7d715f;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+
+.box-contato .text h1 {
+    color: #171719;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.box-contato .text p {
+    color: #B8B8BA ;
+    font-weight: 500;
 }
 
 /* SCROLL */
@@ -647,10 +762,10 @@ font-size: 30px;
 }
 
 .popup-main .popup-box form  
-#form-btn,
-#email,
-#nome,
-#mensagem
+.popup-main .popup-box form #form-btn,
+.popup-main .popup-box form #email,
+.popup-main .popup-box form #nome,
+.popup-main .popup-box form #mensagem
 {
     width: 300px;
     height: 30px;
@@ -671,8 +786,8 @@ font-size: 30px;
 }
 
 .popup-main .popup-box form  
-#email,
-#nome{
+.popup-main .popup-box form #email,
+.popup-main .popup-box form #nome{
     border: none;
     border-bottom: 1px solid #333;
 }
@@ -707,4 +822,4 @@ textarea:focus{
 
 .popup-main .popup-box form #form-btn i{
     margin-left: 5px;
-}
+}   

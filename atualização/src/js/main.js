@@ -25,12 +25,12 @@ class FormSubmit {
     }
     
     displaySucces() {
-        this.form.innerHTML = this.settings.success;
+        this.form.innerHTML += this.settings.success;
     }
     
     
     displayError() {
-        this.form.innerHTML = this.settings.error;
+        this.form.innerHTML += this.settings.error;
     }
     
     getFormObject() {
