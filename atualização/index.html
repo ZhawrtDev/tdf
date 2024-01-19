@@ -27,6 +27,11 @@
             </div>
         </div>
 
+        <div class="menu">
+            <ion-icon class="toogle" name="menu"></ion-icon>
+            <ion-icon class="close" name="close"></ion-icon>
+        </div>
+
         <div class="navigation">
             <li><a href="#">Reflexão</a></li>
             <li><a href="#">Cultos</a></li>
@@ -50,9 +55,9 @@
             </div>
         </div>
     </section>
-
+    
     <!-- BOXS -->
-    <section>
+    <section id="boxs">
         <div class="main-box">
 
             <a href="https://www.youtube.com/@tabernaculodafeperi-peri/streams">
@@ -173,7 +178,7 @@
 
         </div>
     </section>
-
+    
     <!-- PROFETA -->
     <section>
         <div id="profeta">
@@ -191,7 +196,7 @@
         <div class="testemunhos-main">
 
             <div class="testemunho-box">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3XaflTQkWJY?si=CGxpEJxPOmJNHa4_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/3XaflTQkWJY?si=CGxpEJxPOmJNHa4_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="text">
                     <p>Assista ao Video </p>       
                     <h1>Testemunho Billy Paul</h1>
@@ -199,15 +204,15 @@
             </div>
 
             <div class="testemunho-box">
-                <div class="text">
+                <div class="text s2">
                     <p>Assista ao Video</p> 
                     <h1>Testemunho de Sidney Jackson</h1>
                 </div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/09t9lJ_bGzQ?si=WRyOiI-JT3hhNasr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>              
+                <iframe class="video s2" width="560" height="315" src="https://www.youtube.com/embed/09t9lJ_bGzQ?si=WRyOiI-JT3hhNasr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>              
             </div>
         </div>
     </section>
-
+    
     <!-- CONTATO -->
     <section id="contato">
         <div class="contato">
@@ -240,39 +245,60 @@
             </div>
     
             <div class="contato-form">
-                <form class="contato-form" action="https://formsubmit.co/ajax/tdfperiperi@gmail.com" method="POST" data-form>    
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" required/>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required/>
-                    <label id="label-msg" for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" required></textarea>
+                <form class="contato-form" action="https://formsubmit.co/ajax/tdfperiperi@gmail.com" method="POST" data-form>
+                    <input placeholder="Nome" type="text" name="nome" id="nome" required/>
+                    <input placeholder="Email" type="email" name="email" id="email" required/>
+                    <textarea placeholder="Mensagem" name="mensagem" id="mensagem" required></textarea>
                     <button id="form-btn" type="submit" data-button>Enviar Mensagem<i class="uil uil-message"></i></button>
                 </form>
             </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
+    <!-- <footer>
+        <div class="main-footer">
+            <div class="box-footer">
+                <div class="text">
+                    <h1>Veja as Reflexões do Dia </h1>
+                </div>
+                <a href="#">Ver <i class="uil uil-arrow-right"></i></a>
+            </div>
+
+            <div class="content-footer">
+                <ul>
+                    <div class="logo">
+                        <img src="src/img/Logo Tdf.png" />
+                    </div>
+                    <div class="icones">
+                        <li><a href="https://www.youtube.com/channel/UCJ1RTO5MjmLlgI5rlEEqCiA"><i class="uil uil-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/tabernaculodafeperiperi/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="uil uil-instagram"></i></a></li>
+                    </div>
+                    <p id="ecomerce-footer">© 2023 - 2024</p>
+                    <p id="paragrafo-footer">O site Tabernáculo da Fé Peri-Peri é o canal oficial da igreja de Miravânia, Minas Gerais, que está aos cuidados do pastor Edson Honório. No site, você pode acompanhar os cultos ao vivo, baixar as pregações, conhecer a história da igreja e o ministério do pastor Edson.</p>
+                </ul>
+
+                <ul class="item">
+                    <p>Paginas</p>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Reflexão</a></li>
+                    <li><a href="#">Peças</a></li>
+                </ul>
+
+                <ul class="item sw">
+                    <p>Veja</p>
+                    <li><a href="#pastor">Sobre</a></li>
+                    <li><a href="#">Reflexão</a></li>
+                    <li><a href="#boxs">Mais Informações</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer> -->
+    
     <!-- SCROLL -->
     <a href="#" id="scroll-to-top" class="hidden" onclick="scrollToTop(); return false;">
         <i class="bx bx-chevron-up"></i>
     </a>
-
-    <!-- POP UP - MAIN - FORM -->
-    <div class="popup-main">
-        <div class="popup-box">
-            <form action="https://formsubmit.co/ajax/tdfperiperi@gmail.com" method="POST" data-form>
-                <h1>Notifique</h1>
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite Seu Nome" required/>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Digite Seu Email" required/>
-                <label for="mensagem" >Mensagem</label>
-                <textarea name="mensagem" id="mensagem" required placeholder=" Notifique a sua audiência Faça seu pedido de oração."></textarea>
-                <button id="form-btn" type="submit" data-button>Enviar <i class="uil uil-message"></i></button>
-            </form>
-        </div>
-    </div>
 
     <!-- SCRIPT -->
     <script src="src/js/main.js"></script>

@@ -1,0 +1,29 @@
+
+
+    <!-- POP UP - MAIN - NOTFICAÇÃO -->
+    <div class="notficação">
+        <div class="cabeçario">
+            <h1>Notficação</h1>
+            <span>Suas Notificações aparecerão aqui</span>
+        </div>
+        <div class="content-notfiçaçao">
+            <img src="src/img/8252f86328cdb8d3dd71b25eb452fe66.svg">
+            <p>Não Tem notificação no momento</p>
+        </div>
+    </div>
+
+    <!-- POP UP - MAIN - FORM -->
+    <div class="popup-main">
+        <div class="popup-box">
+            <form action="https://formsubmit.co/ajax/tdfperiperi@gmail.com" method="POST" data-form>
+                <h1>Notifique</h1>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite Seu Nome" required/>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite Seu Email" required/>
+                <label for="mensagem" >Mensagem</label>
+                <textarea name="mensagem" id="mensagem" required placeholder=" Notifique a sua audiência Faça seu pedido de oração."></textarea>
+                <button id="form-btn" type="submit" data-button>Enviar Mensagem <i class="uil uil-message"></i></button>
+            </form>
+        </div>
+    </div>

@@ -1,3 +1,20 @@
+// HEADER SCRIPT
+const navigation = document.querySelector(".navigation");
+const menu = document.querySelector(".toogle");
+const close = document.querySelector(".close");
+
+menu.addEventListener("click", () => {
+    navigation.classList.add("active");
+    menu.classList.add("active");
+    close.classList.add("active");
+});
+
+close.addEventListener("click", () => {
+    navigation.classList.remove("active");
+    menu.classList.remove("active");
+    close.classList.remove("active");
+});
+
 // MAIN
 const elEnviar = document.querySelector(".enviar");
 const elPopupMain = document.querySelector(".popup-main");
@@ -9,7 +26,20 @@ window.addEventListener("click", (e) => {
 
     if(e.target.className == "popup-main active") {
         elPopupMain.classList.remove("active");
+    };
+
+    // POP UP - MAIN - NOTFICAÇÃO
+    const ElNotificacao = document.querySelector(".bx-bell");
+    const ElNotificacaoPopUp = document.querySelector(".notficação");
+
+    ElNotificacao.addEventListener("click", () => {
+        ElNotificacaoPopUp.classList.toggle("active");
+    });
+
+    if (e.target.tagName == "SECTION" || e.target.tagName == "DIV" || e.target.tagName == "HEADER") {
+        ElNotificacaoPopUp.classList.remove("active");
     }
+
 })
 
 // Toda A Configuração Para Cair As Notficações No Email
