@@ -36,8 +36,14 @@ window.addEventListener("click", (e) => {
         ElNotificacaoPopUp.classList.toggle("active");
     });
 
-    if (e.target.tagName == "SECTION" || e.target.tagName == "DIV" || e.target.tagName == "HEADER") {
+    if (e.target.tagName == "SECTION" || e.target.tagName == "HEADER") {
         ElNotificacaoPopUp.classList.remove("active");
+    }
+
+    if(e.target.className == "bx bx-bell") {
+        navigation.classList.remove("active");
+        menu.classList.remove("active");
+        close.classList.remove("active");
     }
 
 })
