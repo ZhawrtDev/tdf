@@ -1107,9 +1107,12 @@ textarea:focus{
 
 /* MEDIA MAIN */
 @media (max-width: 570px) {
-    .video {
+     .video {
+        position: relative;
         aspect-ratio: 16 / 9;
-        width: 100%;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
 
