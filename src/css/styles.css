@@ -1326,6 +1326,7 @@ textarea:focus{
 @media (max-width: 718px) {
     .content-footer {
         grid-template-columns: 1fr;
+        height: 700px;
     }
 }
 
