@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #contato {
+      background: #FBFBFE;
+    }
+
+    .contato {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contato-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #585665;
+    }
+
+    .contato-form label {
+      position: relative;
+      left: -214px;
+      top: 34px;
+      font-weight: 500;
+      font-size: 13px;
+      transition: 0.3s ease-out;
+    }
+
+    .contato-form label.active {
+      top: 0;
+      font-size: 12px;
+      color: #4CAF50; /* Optional: Change color when label is up */
+    }
+
+    .contato-form input,
+    .contato-form textarea {
+      background: #dfdfe9;
+      border: none;
+      width: 500px;
+      padding: 10px;
+      margin-bottom: 15px; /* Optional: Add margin between inputs */
+      border-radius: 7px;
+      transition: border-color 0.3s ease-out;
+    }
+
+    .contato-form input:focus,
+    .contato-form textarea:focus {
+      outline: none;
+      border-color: #4CAF50; /* Optional: Change border color on focus */
+    }
+
+    /* Adicionando um estilo para destacar o campo em foco */
+    .contato-form input:focus,
+    .contato-form textarea:focus {
+      box-shadow: 0 0 5px rgba(76, 175, 80, 0.6); /* Adapte conforme necessário */
+    }
+  </style>
+  <title>Contato</title>
+</head>
+<body>
+  <section id="contato">
+    <div class="contato">
+      <div class="boxs-contato"></div>
+
+      <div class="contato-form">
+        <form class="contato-form" action="https://formsubmit.co/ajax/tdfperiperi@gmail.com" method="POST" data-form>    
+          <input type="text" name="nome" id="nome" required onfocus="handleLabel(this)" onblur="handleLabel(this)"/>
+          <label for="nome">Nome</label>
+
+          <input type="email" name="email" id="email" required onfocus="handleLabel(this)" onblur="handleLabel(this)"/>
+          <label for="email">Email</label>
+
+          <textarea name="mensagem" id="mensagem" required onfocus="handleLabel(this)" onblur="handleLabel(this)"></textarea>
+          <label id="label-msg" for="mensagem">Mensagem</label>
+
+          <button id="form-btn" type="submit" data-button>Enviar <i class="uil uil-message"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function handleLabel(input) {
+      const label = input.nextElementSibling;
+      label.classList.toggle('active', input.value !== '' || input === document.activeElement);
+    }
+  </script>
+</body>
+</html>
