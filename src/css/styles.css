@@ -202,6 +202,11 @@ i.bx.bx-bell {
 }
 
 /* MAIN */
+section#main {
+    position: relative;
+    top: -20px;
+}
+
 .div-youtube {
     position: relative;
     top: -40px;
@@ -282,6 +287,8 @@ i.bx.bx-bell {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+    top: -50px;
 }
 
 .main-box .box {
@@ -577,6 +584,8 @@ i.bx.bx-bell {
 }
 
 .contato-form {
+    position: relative;
+    top: -20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1107,9 +1116,12 @@ textarea:focus{
 
 /* MEDIA MAIN */
 @media (max-width: 570px) {
-    .video {
+     .video {
+        position: relative;
         aspect-ratio: 16 / 9;
-        width: 100%;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
 
@@ -1316,6 +1328,7 @@ textarea:focus{
 @media (max-width: 718px) {
     .content-footer {
         grid-template-columns: 1fr;
+        height: 700px;
     }
 }
 
