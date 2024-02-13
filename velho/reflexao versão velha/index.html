@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexões</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="css/style-prefix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="fundo"></section>
+    <header class="header">
+        <div class="logo-main">
+       <div class="logo-content">
+           <a href="../index.html"><img src="../src/img/tdf.png" /></a>
+          <a href="../index.html"><h2 class="logo">Tabernáculo Da Fé</h2></a>
+       </div>
+           <p>Peri-Peri</p>
+       </div>
+        <input placeholder="Pesquisar a Reflexão Do Dia" id="search-input"  class="input" type="text">
+       <div class="icons">
+            <i class='bx bx-bell'></i>
+           <!-- <div class="circulo"></div> -->
+       </div>
+   </header>
+
+
+
+   <div class="notficacao">
+    <div class="main">
+
+        <div class="main-content">
+            <h1>Notificações</h1>
+            <ion-icon class="close" name="close-outline"></ion-icon>
+        </div>
+
+        <!--  <div class="content">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="img.jpg">
+                    </div>
+                    <div class="text">
+                        <h1>titulo</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum nesciunt laborum dicta at mollitia animi ipsa nobis similique! Corporis a culpa ducimus es</p>
+                    </div>
+                </div>
+            </div>-->
+            
+
+                <!-- SCRIPT COM API AIzaSyD4tT68aYD4_SKJVSq_OGjp8PThferQMQM -->
+
+
+            
+        </div>
+
+    </div>
+</div>
+
+    <section>
+        <nav class="nav">
+            <li><a class="ativo navA" href="#recentes">Recentes</a></li>
+            <li><a class="navA" href="#destaque">Destaques</a></li>
+            <li><a class="navA" href="#recomendados">Recomendados</a></li>
+            <li><a class="navA" href="#short">Shorts</a></li>
+        </nav>
+        <nav class="nav-mobile">
+            <li><a class="ativo navA" href="#recentes">Recentes</a></li>
+            <li><a class="navA" href="#destaque">Destaques</a></li>
+            <li><a class="navA m" href="#recomendados">Recomendados</a></li>
+            <li><a class="navA n" href="#short">Shorts</a></li>
+        </nav>
+    </section>
+
+    <main>
+        <div class="banner">
+            <div class="container">
+              <div class="slider-container has-scrollbar">
+                <div class="slider-item">
+
+                    <div class="box-banner">
+                        <div class="reflexao-content">
+                            <div class="reflexao-banner"></div>
+                            <div class="nome-reflexao"></div>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <div id="video-container">
+        <div class="posit">
+            <div class="main-videos">
+
+            </div>
+        </div>
+    </div>
+
+    
+
+    <p style="
+    position: relative;
+    top: -250px;
+    left: 5%;
+    transform: translate(-50%);
+    color: #333;
+    width: 10px;
+    ">Últimos</p>
+    <div id="ultimos" class="hino-section">
+        <div class="tds"></div>
+        <div onclick="nextVideo()" class="seta"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+    </div>
+    
+    <div id="image-container" class="hino-section"></div>
+    <div id="dots-container"></div>
+
+    <p style="
+    position: relative;
+    top: -250px;
+    left: 5%;
+    transform: translate(-50%);
+    color: #333;
+    width: 10px;
+    ">Recentes</p>
+    <div id="recentes" class="hino-section">
+        <div class="imagem-container fl">
+            <div class='box'><a href='https://www.youtube.com/watch?v=UWNI8eTu1lo' class='videos-box'><div class='img-content-reflexao'><img class='hinolink img' src='https://i.ytimg.com/vi/UWNI8eTu1lo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnubfyRPWXMrICukk08A4DvHHHcg' /></div></a></div>
+            <div class='box'><a href='https://www.youtube.com/watch?v=xqAYQjd2Jd0' class='videos-box'><div class='img-content-reflexao'><img class='hinolink img' src='https://i.ytimg.com/vi/xqAYQjd2Jd0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWuPQaGysvkNVpOoTbOOmHbpEc_A' /></div></a></div>
+            <div class='box'><a href='https://www.youtube.com/watch?v=-lhIEmAyMG8' class='videos-box'><div class='img-content-reflexao'><img class='hinolink img' src='https://i.ytimg.com/vi/-lhIEmAyMG8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBL_Ug8VPLaFM2kGg8FToUaP8s7yw' /></div></a></div>
+            <div class='box'><a href='https://www.youtube.com/watch?v=nHRXaJPCmD4' class='videos-box'><div class='img-content-reflexao'><img class='hinolink img' src='https://i.ytimg.com/vi/nHRXaJPCmD4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCp8fpBv6W_u9WEthvo9fCN8wkHLw' /></div></a></div>
+        </div>
+        <div onclick="carregarImagens()" class="seta"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+    </div>
+
+    <p style="
+    position: relative;
+    top: -250px;
+    left: 5%;
+    transform: translate(-50%);
+    color: #333;
+    width: 10px;
+    ">Destaques</p>
+    <div id="destaque" class="hino-section"></div>
+
+    <p style="
+    position: relative;
+    top: -250px;
+    left: 5%;
+    transform: translate(-50%);
+    color: #333;
+    width: 10px;
+    ">Recomendados</p>
+    <div id="recomendados" class="hino-section"></div>
+
+        <!-- CRIAR UM LUGAR AQUI DE DESTAQUES DE IRMÃOS -->
+        <h1 id="titulo">Destaques</h1>
+
+        <section>
+            <div class="destaques-main">
+
+                <div class="box">
+                    <div class="header">
+                        <div class="img">
+                            <img src="https://yt3.googleusercontent.com/sx4QeyTN70SH_hVCID5Vt_lkxYkUPCFbU6EOcCZlsLjA09nRapz5mTmCESjPjrAHLXCUx4qI7w=s176-c-k-c0x00ffffff-no-rj" >
+                        </div>
+                        <div class="nome">
+                            <h5>Irmã</h5>
+                            <h4>Zirlani Belém</h4>
+                        </div>
+                    </div>
+                    <div class="mensagem">
+                        <p>Um dia você será levado a presença de Deus, esteja você preparado ou não</p>
+                    </div>
+                    <div class="creditos">
+                        <div class="assistir">
+                            <p class="p-reflexao">Reflexão: Viva Como As Flores</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="header">
+                        <div class="img">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKY5dE3obmgaK1x_rlPvpPpD6PHGwm4vdxs81QAsWao=s176-c-k-c0x00ffffff-no-rj" >
+                        </div>
+                        <div class="nome">
+                            <h5>Irmã</h5>
+                            <h4>Cláudia Lisboa</h4>
+                        </div>
+                    </div>
+                    <div class="mensagem">
+                        <p id="mensagem-p">Ser cristão é não dizer nada que você não gostaria de estar dizendo quando Cristo vier , 
+                            é não pensar nada que você não gostaria de estar pensando quando Cristo  vier,
+                             é não fazer nada que você não gostaria de estar fazendo quando Cristo vier.</p>
+                    </div>
+                    <div class="creditos">
+                        <div class="assistir">
+                            <p class="p-reflexao">Reflexão: Ambientes e Influências</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="header">
+                        <div class="img">
+                            <img src="https://yt3.googleusercontent.com/ytc/APkrFKbMhQKTCrCKWRwOz7nmrCEvCWLkGJwVewBCqQ=s176-c-k-c0x00ffffff-no-rj" >
+                        </div>
+                        <div class="nome">
+                            <h5>Irmã</h5>
+                            <h4>Josi Peixoto </h4>
+                        </div>
+                    </div>
+                    <div class="mensagem">
+                        <p>Eleja o Espírito Santo como a voz que te orientará, seja a voz do Espírito Santo a primeira voz do seu dia!</p>
+                    </div>
+                    <div class="creditos">
+                        <div class="assistir">
+                            <p class="p-reflexao">Reflexão: Um Cristão lê e Ora</p>
+                        </div>
+                    </div>
+                </div>
+    
+             </div>
+        </section>
+
+        <p style="
+        position: relative;
+        top: -160px;
+        left: 5%;
+        transform: translate(-50%);
+        color: #333;
+        width: 10px;
+        ">Shorts</p>
+        <div id="short" class="hino-section" style="top: -170px;">
+            <div class='box'><a href='https://www.youtube.com/shorts/9iD_13xkGXQ' class='videos-box'><div class='img-content-reflexao' style='width: 280px;'><img class='hinolink img' src='https://i.ytimg.com/vi/9iD_13xkGXQ/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLDjv5BZdE3LmQnbaWUg4vah5M70oQ' /></div></a></div>
+
+        </div>
+
+       
+
+        <footer>
+
+            <div class="footer-main-r">
+                <div class="content">
+                    <div class="img-cntent">
+                        <img src="img/Logo Tdf.png">
+                    </div>
+                    <div class="text">
+                        <p>Av. Castelo Branco, 6.650 - Bairro Ipiranga <br>
+                        CEP. 74.453-383 - Goiânia - GO - Brasil <br>
+                        Fone: (62) 4013-9090 - Fax: 4013-9061 - igreja@tabernaculodafe.org.br</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

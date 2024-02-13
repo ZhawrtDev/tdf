@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabernáculo Da Fé</title>
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css?_cacheOverride=1703547652288"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="shortcut icon" href="src/imgs/favicon.ico" type="image/x-icon" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <div class="img">
+          <img src="src/imgs/tdf.png" />
+        </div>
+        <div class="text">
+          <h1>Tabernáculo Da Fé</h1>
+          <p>Peri-Peri</p>
+        </div>
+      </div>
+      <div class="fundo"></div>
+      <div class="content">
+        <div class="search">
+          <i class="uil uil-search"></i>
+          <input
+            id="search-input"
+            class="input"
+            placeholder="Digite sua pesquisa"
+            type="text"
+          />
+        </div>
+
+        <div class="icone">
+          <i class="uil uil-moon"></i>
+          <i class="uil uil-bell"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <div class="navigation">
+      <li><a href="#recentes">Recentes</a></li>
+      <li><a href="#destaques">Destaques</a></li>
+      <li><a href="#recomendados">Recomendados</a></li>
+    </div>
+
+    <!-- BANNER -->
+    <section>
+      <div class="banner">
+        <div class="img-banner"></div>
+        <div class="text-banner"></div>
+      </div>
+    </section>
+
+    <!-- REFLEXÃO -->
+    <section class="section-reflexões" id="recentes">
+      <div class="titulo">
+        <h1>Recentes</h1>
+      </div>
+      <div onclick="getVideo();" class="proximo">
+        <p>Proximo <i class="uil uil-arrow-right"></i></p>
+      </div>
+      <div class="tds"></div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section class="section-reflexões" id="destaques">
+      <div class="titulo">
+        <h1>Destaques</h1>
+      </div>
+      <div onclick="loadVideos();" class="proximo">
+        <p>Proximo <i class="uil uil-arrow-right"></i></p>
+      </div>
+      <div id="videos" class="tds"></div>
+    </section>
+
+    <!-- RECOMENDADOS -->
+    <section class="section-reflexões" id="recomendados">
+      <div class="titulo">
+        <h1>Recomendados</h1>
+      </div>
+      <div onclick="RecomendadosFunc();" class="proximo">
+        <p>Proximo <i class="uil uil-arrow-right"></i></p>
+      </div>
+      <div id="Recomandados" class="tds"></div>
+    </section>
+
+    <!-- SECTION DESTAQUES DOS IRMÃOS -->
+    <section id="section-destaque-ir">
+      <div class="main-destaques">
+        <div class="box-destaque">
+          <div class="cabeçario">
+            <div class="img">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/APkrFKbMhQKTCrCKWRwOz7nmrCEvCWLkGJwVewBCqQ=s176-c-k-c0x00ffffff-no-rj"
+              />
+            </div>
+            <div class="text">
+              <p>Irmã</p>
+              <h1>Josi Peixoto</h1>
+            </div>
+          </div>
+          <div class="text-destaque">
+            <p>
+              Eleja o Espírito Santo como a voz que te orientará, seja a voz do
+              Espírito Santo a primeira voz do seu dia!
+            </p>
+          </div>
+          <div class="reflexão-destaque">
+            <div class="text">
+              <p>Reflexão: <span>Um Cristão lê e Ora</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-destaque">
+          <div class="cabeçario">
+            <div class="img">
+              <img
+                src="https://yt3.googleusercontent.com/sseb6Ez_g65R0N9ztv7CTG6mE4cHFdRTIWMBhCse7xqtHbZ7Diww4wbHRrH6e9SO-I3D7vON=s176-c-k-c0x00ffffff-no-rj"
+              />
+            </div>
+            <div class="text">
+              <p>Irmã</p>
+              <h1>Zirlani Belém</h1>
+            </div>
+          </div>
+          <div class="text-destaque">
+            <p>
+              Um dia você será levado a presença de Deus, esteja você preparado
+              ou não
+            </p>
+          </div>
+          <div class="reflexão-destaque">
+            <div class="text">
+              <p>Reflexão: <span>Viva Como As Flores</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="content-footer">
+        <div class="itemas">
+          <div class="logo-footer">
+            <img src="src/imgs/Logo Tdf.png" />
+          </div>
+
+          <div class="icones">
+            <a href="https://www.youtube.com/channel/UCJ1RTO5MjmLlgI5rlEEqCiA">
+              <i class="uil uil-youtube"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/tabernaculodafeperiperi/?igshid=MzRlODBiNWFlZA%3D%3D"
+            >
+              <i class="uil uil-instagram"></i>
+            </a>
+          </div>
+
+          <p id="ecomerce-footer">© 2023 - 2024</p>
+          <p id="paragrafo-footer">
+            O site Tabernáculo da Fé Peri-Peri é o canal oficial da igreja de
+            Miravânia, Minas Gerais, que está aos cuidados do pastor Edson
+            Honório. No site, você pode acompanhar os cultos ao vivo, baixar as
+            pregações, conhecer a história da igreja e o ministério do pastor
+            Edson.
+          </p>
+        </div>
+
+        <div class="item">
+          <p>Paginas</p>
+          <a href="../index.html">Inicio</a>
+          <a href="index.html">Reflexão</a>
+          <a href="../peças/index.html">Peças</a>
+        </div>
+
+        <div class="item sw">
+          <p>Veja</p>
+          <a href="../index.html">Sobre</a>
+          <a href="index.html">Reflexão</a>
+          <a href="../index.html">Mais Informações</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- POP UP - INPUT -->
+    <div class="pop-up-input-main">
+      <div class="box-input">
+        <div class="main-videos"></div>
+      </div>
+    </div>
+
+    <!-- SCROLL -->
+    <a
+      href="#"
+      id="scroll-to-top"
+      class="hidden"
+      onclick="scrollToTop(); return false;"
+    >
+      <i class="bx bx-chevron-up"></i>
+    </a>
+
+    <!-- SCRIPT -->
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
