@@ -10,6 +10,10 @@
   --color-black: #342a24;
   --color-gray: #616063;
   --color-white: #fff;
+  --background-color: #fff;
+  --color-fundo: #8e7a62;
+  --color-destaques: #fff;
+  --shadow-destaque: 1px 1px 12px #333;
   --transition-duration: 0.5s;
   --transition-property: background-color, color;
   --transition-timing-function: ease;
@@ -39,11 +43,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 body {
-  background: #fff;
+  background: var(--background-color);
   position: relative;
   height: 1000px;
   min-height: 100vh;
   font-weight: 700;
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
 }
 html {
   scroll-behavior: smooth;
@@ -78,7 +85,7 @@ header {
 }
 
 .fundo {
-  background: #8e7a62;
+  background: var(--color-fundo);
   position: absolute;
   top: 0;
   left: 0;
@@ -145,7 +152,7 @@ header {
   height: 40px;
   width: 47px;
   font-size: 20px;
-  color: var(--color-gray);
+  color: #616063;
 }
 
 .content .search .input {
@@ -157,6 +164,7 @@ header {
   font-weight: 500;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.068);
   cursor: pointer;
+  top: 307px;
 }
 
 .content .search .input:focus {
@@ -164,7 +172,7 @@ header {
 }
 
 .content .search .input::placeholder {
-  color: var(--color-gray);
+  color: #616063;
   font-size: 16px;
 }
 
@@ -245,14 +253,14 @@ header {
 }
 
 .banner .text-banner h1 {
-  color: var(--color-black);
+  color: #342a24;
   font-size: 25px;
   position: relative;
   top: -1px;
 }
 
 .banner .text-banner h2 {
-  color: var(--color-black);
+  color: #342a24;
   font-size: 13px;
   position: relative;
   top: -6px;
@@ -349,11 +357,11 @@ img.hinolink.img {
 }
 
 .box-destaque {
-  background: #fff;
+  background: var(--color-destaques);
   width: 367px;
   height: 250px;
   border-radius: 10px;
-  box-shadow: 1px 1px 12px #333;
+  box-shadow: var(--shadow-destaque);
   margin-bottom: 40px;
   margin-right: 20px;
 }
@@ -550,6 +558,11 @@ p#ecomerce-footer {
   height: 100%;
   z-index: 1;
   background: #3333337a;
+  display: none;
+}
+
+.pop-up-input-main.active {
+  display: flex;
 }
 
 .pop-up-input-main .box-input {
@@ -561,7 +574,7 @@ p#ecomerce-footer {
   left: 50%;
   z-index: 99;
   transform: translate(-50%);
-  width: 1050px;
+  width: 1069px;
   height: 485px;
   backdrop-filter: blur(30px);
   border: 1px solid #ffffff52;
@@ -573,10 +586,15 @@ p#ecomerce-footer {
   top: 152px;
   position: fixed;
   left: 26%;
-  z-index: 99;
+  z-index: 10;
   background: #fff;
   color: #333;
   transform: translate(-50%);
+}
+
+i.uil.uil-search.active {
+  position: absolute;
+  top: -200px;
 }
 
 .main-videos {
@@ -588,11 +606,72 @@ p#ecomerce-footer {
 }
 
 .box-video {
-  background: red;
   width: 300px;
   height: 200px;
   border-radius: 10px;
   margin: 20px;
+}
+
+.box-search.video {
+  margin: 15px;
+}
+
+/* POP UP - MAIN - NOTFICAÇÃO */
+.notficação {
+  position: fixed;
+  top: 74px;
+  right: 115px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 560px;
+  background: #fff;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.188);
+  border-radius: 5px;
+}
+
+.notficação.active {
+  display: flex;
+}
+
+.notficação .cabeçario {
+  position: relative;
+  top: -114px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e8eaec;
+}
+
+.notficação .cabeçario h1 {
+  color: #3a3e41;
+  font-size: 21px;
+  line-height: 2.4rem;
+}
+
+.notficação .cabeçario span {
+  cursor: not-allowed;
+  color: #666;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 0 8px;
+}
+
+.notficação .content-notfiçaçao {
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.notficação .content-notfiçaçao p {
+  margin-top: 40px;
 }
 
 /* MEDIA FOOTER */
@@ -682,5 +761,22 @@ p#ecomerce-footer {
     font-weight: 500;
     font-size: 13px;
     max-width: 369px;
+  }
+}
+
+/* POP UP - MAIN - NOTFICAÇÃO */
+@media (max-width: 800px) {
+  .notficação.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media (max-width: 418px) {
+  .notficação.active {
+    width: 100%;
   }
 }
