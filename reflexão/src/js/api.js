@@ -5,7 +5,7 @@ const tituloReflexao = document.querySelector(".text-banner");
 
 function getBanner() {
   fetch(
-    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&maxResults=3&order=date&key=AIzaSyC8CaMGmTdfrBNNVYlOHWnaEWydYK8imYQ&pageToken=" +
+    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&maxResults=3&order=date&key=AIzaSyCwe-ZnGmDOAUUlEe9_n06UejfOS9gRrUw&pageToken=" +
       nextPageToken
   )
     .then((res) => {
@@ -33,7 +33,7 @@ getBanner();
 // RECENTES
 function getVideo() {
   fetch(
-    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&maxResults=3&order=date&key=AIzaSyC8CaMGmTdfrBNNVYlOHWnaEWydYK8imYQ&pageToken=" +
+    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&maxResults=3&order=date&key=AIzaSyCwe-ZnGmDOAUUlEe9_n06UejfOS9gRrUw&pageToken=" +
       nextPageToken
   )
     .then((res) => {
@@ -59,7 +59,7 @@ getVideo();
 
 // DESTAQUE
 const channelId = "UCJ1RTO5MjmLlgI5rlEEqCiA";
-const apiKey = "AIzaSyC8CaMGmTdfrBNNVYlOHWnaEWydYK8imYQ";
+const apiKey = "AIzaSyCwe-ZnGmDOAUUlEe9_n06UejfOS9gRrUw";
 
 const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=viewCount&maxResults=3`;
 
@@ -93,7 +93,7 @@ function loadVideos() {
 loadVideos();
 
 //RECOMENDADOS
-const RecomendadoKey = "AIzaSyC8CaMGmTdfrBNNVYlOHWnaEWydYK8imYQ";
+const RecomendadoKey = "AIzaSyCwe-ZnGmDOAUUlEe9_n06UejfOS9gRrUw";
 let recomendadoUrl = `https://www.googleapis.com/youtube/v3/search?key=${RecomendadoKey}&channelId=${channelId}&part=snippet,id&order=rating&maxResults=3`;
 
 function RecomendadosFunc() {
@@ -131,7 +131,7 @@ const videoContainer = document.querySelector("#pop-up-input-main");
 function searchYourVideos() {
   videoContainer.innerHTML = "";
   const searchQuery = searchInput.value;
-  const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyC8CaMGmTdfrBNNVYlOHWnaEWydYK8imYQ&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&q=${searchQuery}&part=snippet&type=video&maxResults=19`;
+  const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyCwe-ZnGmDOAUUlEe9_n06UejfOS9gRrUw&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&q=${searchQuery}&part=snippet&type=video&maxResults=19`;
 
   fetch(apiUrl)
     .then((response) => response.json())
