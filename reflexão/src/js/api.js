@@ -5,7 +5,7 @@ const tituloReflexao = document.querySelector(".text-banner");
 
 function getBanner() {
   fetch(
-    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&maxResults=3&order=date&key=AIzaSyC2QsGmSVOXlkJaLjyT3vdNcEClBv0Oyes&pageToken=" +
+    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&maxResults=3&order=date&key=AIzaSyC8CaMGmTdfrBNNVYlOHWnaEWydYK8imYQ&pageToken=" +
       nextPageToken
   )
     .then((res) => {
@@ -33,7 +33,7 @@ getBanner();
 // RECENTES
 function getVideo() {
   fetch(
-    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&maxResults=3&order=date&key=AIzaSyC2QsGmSVOXlkJaLjyT3vdNcEClBv0Oyes&pageToken=" +
+    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&maxResults=3&order=date&key=AIzaSyC8CaMGmTdfrBNNVYlOHWnaEWydYK8imYQ&pageToken=" +
       nextPageToken
   )
     .then((res) => {
@@ -59,7 +59,7 @@ getVideo();
 
 // DESTAQUE
 const channelId = "UCJ1RTO5MjmLlgI5rlEEqCiA";
-const apiKey = "AIzaSyC2QsGmSVOXlkJaLjyT3vdNcEClBv0Oyes";
+const apiKey = "AIzaSyC8CaMGmTdfrBNNVYlOHWnaEWydYK8imYQ";
 
 const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=viewCount&maxResults=3`;
 
@@ -93,7 +93,7 @@ function loadVideos() {
 loadVideos();
 
 //RECOMENDADOS
-const RecomendadoKey = "AIzaSyC2QsGmSVOXlkJaLjyT3vdNcEClBv0Oyes";
+const RecomendadoKey = "AIzaSyC8CaMGmTdfrBNNVYlOHWnaEWydYK8imYQ";
 let recomendadoUrl = `https://www.googleapis.com/youtube/v3/search?key=${RecomendadoKey}&channelId=${channelId}&part=snippet,id&order=rating&maxResults=3`;
 
 function RecomendadosFunc() {
@@ -129,6 +129,7 @@ RecomendadosFunc();
 const videoContainer = document.querySelector("#pop-up-input-main");
 
 function searchYourVideos() {
+  videoContainer.innerHTML = "";
   const searchQuery = searchInput.value;
   const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyC8CaMGmTdfrBNNVYlOHWnaEWydYK8imYQ&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&q=${searchQuery}&part=snippet&type=video&maxResults=19`;
 
@@ -143,7 +144,7 @@ function searchYourVideos() {
         const videoElement = `
                             <div class="box-search video">
                                 <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">
-                                    <img class='hinolink img' src="${videoThumbnail}" alt="${videoTitle}">
+                                    <img class='hinolink img search-media' src="${videoThumbnail}" alt="${videoTitle}">
                                 </a>
                             </div>
                         `;

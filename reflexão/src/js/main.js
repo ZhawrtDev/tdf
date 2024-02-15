@@ -1,5 +1,3 @@
-// Navigation Script
-
 // Darck Theme
 var isColorChanged = false;
 
@@ -32,7 +30,7 @@ buttons.forEach(function (button) {
         "--color-destaques",
         "#161616"
       );
-      // document.documentElement.style.setProperty("--color-fundo", "#5C4D3E");
+      document.documentElement.style.setProperty("--color-fundo", "#635443");
       document.documentElement.style.setProperty(
         "--shadow-destaque",
         "1px 1px 12px rgba(255,255,255 0.100)"

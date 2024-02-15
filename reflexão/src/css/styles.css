@@ -12,6 +12,7 @@
   --color-white: #fff;
   --background-color: #fff;
   --color-fundo: #8e7a62;
+  --color-banner: #c5ba9c;
   --color-destaques: #fff;
   --shadow-destaque: 1px 1px 12px #333;
   --transition-duration: 0.5s;
@@ -232,7 +233,7 @@ header {
   top: -38px;
   width: 994px;
   height: 266px;
-  background: #c5ba9c;
+  background: var(--color-banner);
   border-radius: 10px;
 }
 
@@ -307,9 +308,8 @@ header {
 }
 
 .tds {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   position: relative;
   top: -43px;
 }
@@ -439,7 +439,7 @@ footer {
 }
 
 .content-footer {
-  background: #7d715f;
+  background: var(--color-fundo);
   width: 100%;
   height: 500px;
   display: grid;
@@ -473,7 +473,7 @@ footer {
 p#paragrafo-footer {
   position: relative;
   left: -67px;
-  color: #3c3c3c;
+  color: var(--color-black);
   font-weight: 500;
   font-size: 13px;
   max-width: 369px;
@@ -483,14 +483,14 @@ p#ecomerce-footer {
   margin: 10px 0;
   position: relative;
   left: -67px;
-  color: #333;
+  color: var(--color-black);
 }
 
 .icones a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #3c3c3c;
+  color: #342a24;
   background: #fff;
   border-radius: 50%;
   width: 30px;
@@ -499,12 +499,12 @@ p#ecomerce-footer {
 }
 
 .item a {
-  color: #3c3c3c;
+  color: var(--color-black);
   font-weight: 500;
 }
 
 .item p {
-  color: #333;
+  color: var(--color-black);
 }
 
 .item {
@@ -518,6 +518,11 @@ p#ecomerce-footer {
 
 .item.sw {
   left: -100px;
+}
+
+/* MOBILE - APPLICATIVO */
+.mobile-app {
+  display: none;
 }
 
 /* SCROLL */
@@ -674,6 +679,117 @@ i.uil.uil-search.active {
   margin-top: 40px;
 }
 
+/* MEDIA HEADER */
+@media (max-width: 940px) {
+  header {
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+}
+
+/* NAVIGATION */
+@media (max-width: 940px) {
+  .navigation {
+    position: relative;
+    left: 50%;
+    width: 500px;
+    transform: translate(-50%);
+  }
+}
+
+/* BANNER */
+@media (max-width: 1080px) {
+  .banner {
+    width: 700px;
+  }
+
+  .banner .img-banner {
+    margin-left: 10px;
+  }
+
+  .banner .text-banner p {
+    max-width: 330px;
+    font-size: 18px;
+    margin-right: 20px;
+  }
+
+  .banner .text-banner h1 {
+    position: absolute;
+    top: 203px;
+    left: -370px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 940px) {
+  .banner {
+    top: -80px;
+  }
+}
+
+@media (max-width: 740px) {
+  .banner {
+    width: 520px;
+    height: 230px;
+  }
+
+  .banner .text-banner a {
+    display: none;
+  }
+
+  .banner .text-banner p {
+    max-width: 330px;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+
+  .banner .text-banner h1 {
+    top: 142px;
+    left: -278px;
+  }
+}
+
+/* REFLEXÃO */
+@media (max-width: 1080px) {
+  img.hinolink.img {
+    width: 232px;
+  }
+
+  .titulo h1 {
+    position: relative;
+    left: 128px;
+  }
+
+  .proximo {
+    left: 308px;
+  }
+}
+
+@media (max-width: 740px) {
+  img.hinolink.img {
+    width: 165px;
+  }
+
+  .proximo {
+    left: 220px;
+  }
+
+  .titulo h1 {
+    left: 230px;
+  }
+}
+
+/* SECTION DESTAQUES DOS IRMÃOS */
+@media (max-width: 830px) {
+  .main-destaques {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* MEDIA FOOTER */
 @media (max-width: 1090px) {
   .content-footer {
@@ -751,16 +867,55 @@ i.uil.uil-search.active {
     margin: 10px 0;
     position: relative;
     left: 18px;
-    color: #333;
   }
 
   p#paragrafo-footer {
     position: relative;
     left: 19px;
-    color: #3c3c3c;
     font-weight: 500;
     font-size: 13px;
     max-width: 369px;
+  }
+}
+
+/* POP UP - INPUT */
+@media (max-width: 1080px) {
+  .pop-up-input-main .box-input {
+    width: 700px;
+  }
+
+  .input.active {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .main-videos {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: 100px;
+    left: 64%;
+    transform: translate(-50%);
+  }
+
+  img.hinolink.img.search-media {
+    width: 250px;
+  }
+}
+
+@media (max-width: 715px) {
+  .pop-up-input-main .box-input {
+    width: 520px;
+  }
+
+  .main-videos {
+    grid-template-columns: 1fr;
+    left: 79%;
+  }
+
+  img.hinolink.img.search-media {
+    width: 300px;
   }
 }
 
@@ -778,5 +933,114 @@ i.uil.uil-search.active {
 @media (max-width: 418px) {
   .notficação.active {
     width: 100%;
+  }
+}
+
+/* MOBILE - APPLICATIVO */
+@media (max-width: 530px) {
+  .mobile-app {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom left, #e7d2d2, #fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    color: var(--color-gray);
+  }
+
+  .mobile-app h1 {
+    font-weight: 500;
+  }
+
+  .mobile-app h1 span {
+    font-weight: 900;
+  }
+
+  .mobile-app .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mobile-app .content .img {
+    width: 340px;
+    height: 400px;
+  }
+
+  .mobile-app .content .header {
+    position: absolute;
+    top: -27px;
+    background: #8e7a62;
+    border-radius: 30px;
+    width: 100%;
+    height: 109px;
+    color: #e8eaec;
+  }
+
+  .mobile-app .content .header .navigatio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 32px;
+    left: 54%;
+    transform: translate(-50%);
+  }
+
+  .mobile-app .content .header .navigatio li {
+    list-style: none;
+  }
+
+  .mobile-app .content .header .navigatio li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 40px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .mobile-app .content .header .navigatio li a i {
+    font-size: 27px;
+    position: relative;
+    top: 6px;
+  }
+
+  .mobile-app .content p {
+    font-weight: 500;
+    max-width: 337px;
+    text-align: center;
+  }
+
+  .mobile-app .content .btn {
+    background: #8e7a62;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  section {
+    display: none;
+  }
+
+  header {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  #video-container {
+    display: none;
   }
 }
