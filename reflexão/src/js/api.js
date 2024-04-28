@@ -5,7 +5,7 @@ const tituloReflexao = document.querySelector(".text-banner");
 
 function getBanner() {
   fetch(
-    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&maxResults=3&order=date&key=AIzaSyCcmgWSnHzDZqY5goSb9PDK-xtvdgUpFMo&pageToken=" +
+    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ1RTO5MjmLlgI5rlEEqCiA&maxResults=3&order=date&key=AIzaSyCSXN2R0kqbPkW__nqgRq2SJKFIezFXAz4&pageToken=" +
       nextPageToken
   )
     .then((res) => {
